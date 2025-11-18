@@ -9,5 +9,5 @@ defined('ABSPATH') || exit;
 
 interface IWpRegisterScriptArgsFactory extends IWpFunctionArgsFactory
 {
-    public function make(): IIWpRegisterScriptArgs;
+    public function make(): IWpRegisterScriptArgs;
 }

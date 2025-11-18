@@ -9,5 +9,5 @@ defined('ABSPATH') || exit;
 
 interface IWpEnqueueScriptModuleDepsFactory extends IWpFunctionArgsFactory
 {
-    public function make(): IIWpEnqueueScriptModuleDeps;
+    public function make(): IWpEnqueueScriptModuleDeps;
 }

@@ -14,7 +14,7 @@ interface IWpEnqueueScriptModuleFunction extends IExecutableFunction
     public function src(string $src): self;
 
     /**
-     * @param IIWpEnqueueScriptModuleDeps[] $deps
+     * @param IWpEnqueueScriptModuleDeps[] $deps
      * @return self
      */
     public function deps(array $deps): self;

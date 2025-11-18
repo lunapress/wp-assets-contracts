@@ -7,7 +7,7 @@ use LunaPress\CoreContracts\Support\WpFunction\IWpFunctionArgs;
 
 defined('ABSPATH') || exit;
 
-interface IIWpRegisterScriptArgs extends IWpFunctionArgs
+interface IWpRegisterScriptArgs extends IWpFunctionArgs
 {
     public function strategy(?string $strategy): self;
 

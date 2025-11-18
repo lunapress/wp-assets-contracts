@@ -8,7 +8,7 @@ use LunaPress\CoreContracts\Support\WpFunction\IWpFunctionArgs;
 
 defined('ABSPATH') || exit;
 
-interface IIWpEnqueueScriptModuleDeps extends IWpFunctionArgs
+interface IWpEnqueueScriptModuleDeps extends IWpFunctionArgs
 {
     public function id(string $id): self;
 

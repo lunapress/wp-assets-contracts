@@ -22,7 +22,7 @@ interface IWpRegisterScriptFunction extends IExecutableFunction
 
     public function version(string|bool|null $version): self;
 
-    public function args(IIWpRegisterScriptArgs|bool $args): self;
+    public function args(IWpRegisterScriptArgs|bool $args): self;
 
     public function executeWithArgs(array $args): bool;
 }
