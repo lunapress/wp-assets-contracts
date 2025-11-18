@@ -22,7 +22,7 @@ interface IWpEnqueueScriptFunction extends IExecutableFunction
      */
     public function getArgs(): IWpEnqueueScriptArgs|bool|null;
 
-    public function handle(string|null $src): self;
+    public function handle(string $handle): self;
     public function src(string|null $src): self;
     /**
      * @param IAssetDependency[]|null $deps
