@@ -7,7 +7,7 @@ use LunaPress\CoreContracts\Support\WpFunction\IWpFunctionArgsFactory;
 
 defined('ABSPATH') || exit;
 
-interface IWpEnqueueScriptModuleDepsWpFunctionArgsFactory extends IWpFunctionArgsFactory
+interface IWpEnqueueScriptModuleDepsFactory extends IWpFunctionArgsFactory
 {
     public function make(): IIWpEnqueueScriptModuleDeps;
 }
