@@ -7,7 +7,7 @@ use LunaPress\CoreContracts\Support\IFactory;
 
 defined('ABSPATH') || exit;
 
-interface IWpRegisterScriptIFactory extends IFactory
+interface IWpRegisterScriptFactory extends IFactory
 {
-    public function make(string $handle, string|false $src): IWpRegisterScriptFunctionI;
+    public function make(string $handle, string|false $src): IWpRegisterScriptFunction;
 }

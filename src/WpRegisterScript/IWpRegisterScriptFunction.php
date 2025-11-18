@@ -8,7 +8,7 @@ use LunaPress\Wp\AssetsContracts\IAssetDependency;
 
 defined('ABSPATH') || exit;
 
-interface IWpRegisterScriptFunctionI extends IExecutableFunction
+interface IWpRegisterScriptFunction extends IExecutableFunction
 {
     public function handle(string $handle): self;
 

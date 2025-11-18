@@ -8,7 +8,7 @@ use LunaPress\Wp\AssetsContracts\IAssetDependency;
 
 defined('ABSPATH') || exit;
 
-interface IWpEnqueueStyleFunctionI extends IExecutableFunction
+interface IWpEnqueueStyleFunction extends IExecutableFunction
 {
     public function handle(string $handle): self;
 

@@ -7,7 +7,7 @@ use LunaPress\CoreContracts\Support\IFactory;
 
 defined('ABSPATH') || exit;
 
-interface IWpEnqueueStyleIFactory extends IFactory
+interface IWpEnqueueStyleFactory extends IFactory
 {
-    public function make(string $handle): IWpEnqueueStyleFunctionI;
+    public function make(string $handle): IWpEnqueueStyleFunction;
 }

@@ -7,7 +7,7 @@ use LunaPress\CoreContracts\Support\IExecutableFunction;
 
 defined('ABSPATH') || exit;
 
-interface IWpEnqueueScriptModuleFunctionI extends IExecutableFunction
+interface IWpEnqueueScriptModuleFunction extends IExecutableFunction
 {
     public function id(string $id): self;
 
