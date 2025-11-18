@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\WpEnqueueStyle;
+namespace LunaPress\Wp\AssetsContracts\WpRegisterScript;
 
-use LunaPress\CoreContracts\Support\ExecutableFunction;
+use LunaPress\CoreContracts\Support\IExecutableFunction;
 use LunaPress\Wp\AssetsContracts\IAssetDependency;
 
 defined('ABSPATH') || exit;
 
-interface IWpEnqueueStyleFunction extends ExecutableFunction
+interface IWpRegisterScriptFunctionI extends IExecutableFunction
 {
     public function handle(string $handle): self;
 
-    public function src(string $src): self;
+    public function src(string|false $src): self;
 
     /**
      * @param IAssetDependency[] $deps
@@ -22,7 +22,7 @@ interface IWpEnqueueStyleFunction extends ExecutableFunction
 
     public function version(string|bool|null $version): self;
 
-    public function media(string $media): self;
+    public function args(IIWpRegisterScriptArgs|bool $args): self;
 
-    public function executeWithArgs(array $args): void;
+    public function executeWithArgs(array $args): bool;
 }

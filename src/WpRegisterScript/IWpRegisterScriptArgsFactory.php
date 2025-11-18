@@ -3,11 +3,11 @@ declare(strict_types=1);
 
 namespace LunaPress\Wp\AssetsContracts\WpRegisterScript;
 
-use LunaPress\CoreContracts\Support\WpFunction\IWpFunctionArgsFactory;
+use LunaPress\CoreContracts\Support\WpFunction\IWpFunctionArgsIFactory;
 
 defined('ABSPATH') || exit;
 
-interface IWpRegisterScriptArgsFactory extends IWpFunctionArgsFactory
+interface IWpRegisterScriptArgsFactory extends IWpFunctionArgsIFactory
 {
-    public function make(): IWpRegisterScriptArgs;
+    public function make(): IIWpRegisterScriptArgs;
 }

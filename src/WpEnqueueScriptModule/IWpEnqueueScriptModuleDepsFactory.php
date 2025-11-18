@@ -3,11 +3,11 @@ declare(strict_types=1);
 
 namespace LunaPress\Wp\AssetsContracts\WpEnqueueScriptModule;
 
-use LunaPress\CoreContracts\Support\WpFunction\IWpFunctionArgsFactory;
+use LunaPress\CoreContracts\Support\WpFunction\IWpFunctionArgsIFactory;
 
 defined('ABSPATH') || exit;
 
-interface IWpEnqueueScriptModuleDepsFactory extends IWpFunctionArgsFactory
+interface IWpEnqueueScriptModuleDepsFactory extends IWpFunctionArgsIFactory
 {
-    public function make(): IWpEnqueueScriptModuleDeps;
+    public function make(): IIWpEnqueueScriptModuleDeps;
 }
