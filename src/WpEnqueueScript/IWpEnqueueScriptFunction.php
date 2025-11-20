@@ -22,9 +22,9 @@ interface IWpEnqueueScriptFunction extends IExecutableFunction
     public function getVersion(): string|bool;
 
     /**
-     * @return IWpEnqueueScriptArgs|bool
+     * @return IWpEnqueueScriptArgs|WpArray|bool
      */
-    public function getArgs(): IWpEnqueueScriptArgs|bool;
+    public function getArgs(): IWpEnqueueScriptArgs|WpArray|bool;
 
     public function handle(string $handle): self;
     public function src(string $src): self;
