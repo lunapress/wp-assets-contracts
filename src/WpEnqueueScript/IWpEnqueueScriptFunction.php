@@ -4,7 +4,8 @@ declare(strict_types=1);
 namespace LunaPress\Wp\AssetsContracts\WpEnqueueScript;
 
 use LunaPress\FoundationContracts\Support\IExecutableFunction;
-use LunaPress\FoundationContracts\Support\WpFunction\WpArgState;
+use LunaPress\FoundationContracts\Support\WpFunction\WpArray;
+use LunaPress\FoundationContracts\Support\WpFunction\WpUnset;
 use LunaPress\Wp\AssetsContracts\IAssetDependency;
 
 defined('ABSPATH') || exit;
@@ -12,25 +13,26 @@ defined('ABSPATH') || exit;
 interface IWpEnqueueScriptFunction extends IExecutableFunction
 {
     public function getHandle(): string;
-    public function getSrc(): string|WpArgState;
+    public function getSrc(): string;
 
     /**
-     * @return IAssetDependency[]|WpArgState
+     * @return IAssetDependency[]
      */
-    public function getDeps(): array|WpArgState;
-    public function getVersion(): string|bool|WpArgState;
+    public function getDeps(): array;
+    public function getVersion(): string|bool;
+
     /**
-     * @return IWpEnqueueScriptArgs|WpArgState|bool
+     * @return IWpEnqueueScriptArgs|bool
      */
-    public function getArgs(): IWpEnqueueScriptArgs|WpArgState|bool;
+    public function getArgs(): IWpEnqueueScriptArgs|bool;
 
     public function handle(string $handle): self;
-    public function src(string|WpArgState $src): self;
+    public function src(string $src): self;
     /**
-     * @param IAssetDependency[]|WpArgState $deps
+     * @param IAssetDependency[] $deps
      * @return self
      */
-    public function deps(array|WpArgState $deps): self;
-    public function version(string|bool|WpArgState $version): self;
-    public function args(IWpEnqueueScriptArgs|WpArgState|bool $args): self;
+    public function deps(array $deps): self;
+    public function version(string|bool $version): self;
+    public function args(IWpEnqueueScriptArgs|WpArray|bool $args): self;
 }
