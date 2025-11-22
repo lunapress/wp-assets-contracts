@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\Functions\WpEnqueueStyle;
+namespace LunaPress\Wp\AssetsContracts\Function\WpEnqueueStyle;
 
 use LunaPress\FoundationContracts\Support\IFactory;
-use LunaPress\Wp\AssetsContracts\Functions\WpEnqueueStyle\IWpEnqueueStyleFunction;
+use LunaPress\Wp\AssetsContracts\Function\WpEnqueueStyle\IWpEnqueueStyleFunction;
 
 defined('ABSPATH') || exit;
 

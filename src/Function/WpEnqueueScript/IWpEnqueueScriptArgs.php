@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\Functions\WpEnqueueScript;
+namespace LunaPress\Wp\AssetsContracts\Function\WpEnqueueScript;
 
 use LunaPress\FoundationContracts\Support\WpFunction\IWpFunctionArgs;
 use LunaPress\FoundationContracts\Support\WpFunction\WpUnset;

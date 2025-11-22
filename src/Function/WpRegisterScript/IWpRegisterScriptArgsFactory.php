@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\Functions\WpRegisterScript;
+namespace LunaPress\Wp\AssetsContracts\Function\WpRegisterScript;
 
 use LunaPress\FoundationContracts\Support\WpFunction\IWpFunctionArgsFactory;
-use LunaPress\Wp\AssetsContracts\Functions\WpRegisterScript\IWpRegisterScriptArgs;
+use LunaPress\Wp\AssetsContracts\Function\WpRegisterScript\IWpRegisterScriptArgs;
 
 defined('ABSPATH') || exit;
 

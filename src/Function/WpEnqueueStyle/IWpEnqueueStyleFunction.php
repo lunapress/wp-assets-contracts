@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\Functions\WpEnqueueStyle;
+namespace LunaPress\Wp\AssetsContracts\Function\WpEnqueueStyle;
 
 use LunaPress\FoundationContracts\Support\IExecutableFunction;
 use LunaPress\Wp\AssetsContracts\Entity\AssetDependency\IAssetDependency;

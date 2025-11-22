@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\Functions\WpRegisterScript;
+namespace LunaPress\Wp\AssetsContracts\Function\WpRegisterScript;
 
 use LunaPress\FoundationContracts\Support\WpFunction\IWpFunctionArgs;
 use LunaPress\FoundationContracts\Support\WpFunction\WpUnset;
