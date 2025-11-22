@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace LunaPress\Wp\AssetsContracts\Function\WpEnqueueStyle;
 
 use LunaPress\FoundationContracts\Support\IExecutableFunction;
-use LunaPress\Wp\AssetsContracts\Entity\AssetDependency\IAssetDependency;
+use LunaPress\Wp\AssetsContracts\Entity\IAssetDependency;
 use LunaPress\FoundationContracts\Support\WpFunction\WpArray;
 
 defined('ABSPATH') || exit;

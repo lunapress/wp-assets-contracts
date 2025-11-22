@@ -5,7 +5,7 @@ namespace LunaPress\Wp\AssetsContracts\Function\WpRegisterScript;
 
 use LunaPress\FoundationContracts\Support\IExecutableFunction;
 use LunaPress\Wp\AssetsContracts\Function\WpRegisterScript\IWpRegisterScriptArgs;
-use LunaPress\Wp\AssetsContracts\Entity\AssetDependency\IAssetDependency;
+use LunaPress\Wp\AssetsContracts\Entity\IAssetDependency;
 use LunaPress\FoundationContracts\Support\WpFunction\WpArray;
 
 defined('ABSPATH') || exit;

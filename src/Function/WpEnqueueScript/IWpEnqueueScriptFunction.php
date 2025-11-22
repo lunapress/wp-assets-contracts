@@ -5,7 +5,7 @@ namespace LunaPress\Wp\AssetsContracts\Function\WpEnqueueScript;
 
 use LunaPress\FoundationContracts\Support\IExecutableFunction;
 use LunaPress\FoundationContracts\Support\WpFunction\WpArray;
-use LunaPress\Wp\AssetsContracts\Entity\AssetDependency\IAssetDependency;
+use LunaPress\Wp\AssetsContracts\Entity\IAssetDependency;
 use LunaPress\Wp\AssetsContracts\Function\WpEnqueueScript\IWpEnqueueScriptArgs;
 
 defined('ABSPATH') || exit;
