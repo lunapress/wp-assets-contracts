@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\WpEnqueueScriptModule\Enum;
+namespace LunaPress\Wp\AssetsContracts\Enum;
 
 defined('ABSPATH') || exit;
 
-enum WpEnqueueScriptModuleImport: string
+enum ScriptModuleImport: string
 {
     case DYNAMIC = 'dynamic';
     case STATIC  = 'static';

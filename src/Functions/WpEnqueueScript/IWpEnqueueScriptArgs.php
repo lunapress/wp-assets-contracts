@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\WpEnqueueScript;
+namespace LunaPress\Wp\AssetsContracts\Functions\WpEnqueueScript;
 
 use LunaPress\FoundationContracts\Support\WpFunction\IWpFunctionArgs;
 use LunaPress\FoundationContracts\Support\WpFunction\WpUnset;
-use LunaPress\Wp\AssetsContracts\WpEnqueueScript\Enum\WpEnqueueScriptStrategy;
+use LunaPress\Wp\AssetsContracts\Enum\ScriptStrategy;
 
 defined('ABSPATH') || exit;
 
 interface IWpEnqueueScriptArgs extends IWpFunctionArgs
 {
-    public function strategy(WpEnqueueScriptStrategy|WpUnset $strategy): self;
+    public function strategy(ScriptStrategy|WpUnset $strategy): self;
     public function inFooter(bool|WpUnset $inFooter): self;
 
-    public function getStrategy(): WpEnqueueScriptStrategy|WpUnset;
+    public function getStrategy(): ScriptStrategy|WpUnset;
     public function getInFooter(): bool|WpUnset;
 }

@@ -1,12 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\WpEnqueueScript;
+namespace LunaPress\Wp\AssetsContracts\Functions\WpEnqueueScript;
 
 use LunaPress\FoundationContracts\Support\IExecutableFunction;
 use LunaPress\FoundationContracts\Support\WpFunction\WpArray;
-use LunaPress\FoundationContracts\Support\WpFunction\WpUnset;
-use LunaPress\Wp\AssetsContracts\IAssetDependency;
+use LunaPress\Wp\AssetsContracts\Entity\AssetDependency\IAssetDependency;
 
 defined('ABSPATH') || exit;
 

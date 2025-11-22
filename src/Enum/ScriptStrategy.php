@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\WpEnqueueScript\Enum;
+namespace LunaPress\Wp\AssetsContracts\Enum;
 
 defined('ABSPATH') || exit;
 
-enum WpEnqueueScriptStrategy: string
+enum ScriptStrategy: string
 {
     case DEFER = 'defer';
     case ASYNC = 'async';

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts\WpEnqueueScriptModule;
+namespace LunaPress\Wp\AssetsContracts\Functions\WpEnqueueScriptModule;
 
 use LunaPress\FoundationContracts\Support\IFactory;
 

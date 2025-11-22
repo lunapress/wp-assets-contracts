@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace LunaPress\Wp\AssetsContracts;
+namespace LunaPress\Wp\AssetsContracts\Entity\AssetDependency;
 
 use Stringable;
 
