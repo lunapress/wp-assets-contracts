@@ -16,23 +16,4 @@ final readonly class ScriptModuleDependency implements WpArgument
         public ScriptModuleImport|WpUnset $import = WpUnset::Value,
     ) {
     }
-
-    /**
-     * @return string|array<string, mixed>
-     */
-    public function toWpValue(): string|array
-    {
-        $idString = $this->id instanceof BackedEnum ? (string) $this->id->value : $this->id;
-        $extra = [];
-
-        if ($this->import !== WpUnset::Value) {
-            $extra['import'] = $this->import->value;
-        }
-
-        if ($extra === []) {
-            return $idString;
-        }
-
-        return ['id' => $idString, ...$extra];
-    }
 }

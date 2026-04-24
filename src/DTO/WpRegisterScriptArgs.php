@@ -17,26 +17,4 @@ final readonly class WpRegisterScriptArgs implements WpArgument
         public WpUnset|FetchPriority $fetchPriority = WpUnset::Value,
     ) {
     }
-
-    /**
-     * @return array<string, mixed>
-     */
-    public function toWpArray(): array
-    {
-        $args = [];
-
-        if ($this->strategy !== WpUnset::Value) {
-            $args['strategy'] = $this->strategy->value;
-        }
-
-        if ($this->inFooter !== WpUnset::Value) {
-            $args['in_footer'] = $this->inFooter;
-        }
-
-        if ($this->fetchPriority !== WpUnset::Value) {
-            $args['fetchpriority'] = $this->fetchPriority->value;
-        }
-
-        return $args;
-    }
 }
